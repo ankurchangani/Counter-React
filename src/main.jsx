@@ -6,6 +6,7 @@ import Counter from './components/Counter/Counter.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    
     <Counter />
   </StrictMode>,
 )
