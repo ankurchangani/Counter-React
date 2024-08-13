@@ -13,6 +13,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1{
+    color: white;
+}
 h2{
     color: wheat;
 }
@@ -21,11 +24,17 @@ h2{
 }
 .Counter{
     background-color: #172c42;
+    display: block;
     padding: 10px;
     border-radius: 10px;
 }
 .main-counter{
     background-color: rgb(79, 217, 150);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
 .counter-container {
     display: flex;
@@ -34,7 +43,7 @@ h2{
     width: 230px;
     height: 230px;
     margin-top: 50px;
-border: 2px solid #172c42;
+    border: 2px solid #172c42;
     border-radius: 30px;
     padding: 20px 10px;
 }
@@ -55,4 +64,16 @@ border: 2px solid #172c42;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.counter-button:hover {
+    background-color: #0056b3;
+}
+
+.stop-button {
+    background-color: #dc3545;
+}
+
+.stop-button:hover {
+    background-color: #c82333;
 }

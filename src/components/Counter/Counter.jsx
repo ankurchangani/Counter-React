@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import '../Counter/Counter.css'
 
+
 const Counter = () => {
     const [count, setCount] = useState(0);
 
@@ -22,17 +23,19 @@ const Counter = () => {
 
     return (
         <div >
-            <div >
-                <h1 className="Counter">Counter</h1>
+            <h1 className="Counter">Counter</h1>
+            <div className="center">
+
+                <div className="counter-container">
+                    <h2 className="counter-display">{count}</h2>
+                    <div className="Flex">
+                        <button className="counter-button" onClick={handleInc}>+</button>
+                        <button className="counter-button" onClick={handleDec}>-</button>
+
+                    </div>
+                </div>
+
             </div>
-        <div className="counter-container">
-            <h2 className="counter-display">{count}</h2>
-            <div className="Flex">
-                <button className="counter-button" onClick={handleInc}>+</button>
-                <button className="counter-button" onClick={handleDec}>-</button>
-               
-            </div>
-        </div>
         </div>
     );
 }
